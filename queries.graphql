@@ -1,7 +1,16 @@
-query {
+query lolz{
   user {
     id
     name
     age
+  }
+}
+
+# Hey there
+
+query new {
+  something {
+    id
+    name
   }
 }

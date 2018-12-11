@@ -1,0 +1,14 @@
+# mutation to delete a todo
+# where id is taken from variables
+
+mutation ($id: int) {
+  delete_todos (
+    where: {
+      id: {
+        _eq: $id
+      }
+    }
+  ) {
+    affected_rows
+  }
+}

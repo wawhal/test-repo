@@ -1,0 +1,25 @@
+# mutation to update a todo
+# todo id and isCompleted is taken from variables
+
+mutation ($id: Int, $isCompleted: Boolean) {
+  update_todos (
+    _set: {
+      is_completed: $isCompleted,
+      updated_at: "now()"
+    },
+    where: {
+      id: {
+        _eq: $id
+      }
+    }
+  ) {
+    returning {
+      id
+      text
+      is_completed
+      created_at
+      updated_at
+      is_public
+    }
+  }
+}

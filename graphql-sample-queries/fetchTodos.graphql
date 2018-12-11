@@ -1,6 +1,7 @@
 # a query to fetch all public todos
 # order by id in descending order
-# where is_public is taken from variables
+# where isPublic is taken from variables
+# fetches only first 10 articles in the list
 query (
   $isPublic: Boolean,
 ){

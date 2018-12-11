@@ -1,0 +1,23 @@
+# mutation to insert a todo
+# userId, text and isPublic are taken from variables
+mutation ($text: String!, $userId: String!, $isPublic: Boolean){
+  insert_todos (
+    objects: [{
+      text: $text,
+      user_id: $userId,
+      is_public: $isPublic
+    }]
+  ){
+    returning {
+      id
+      text
+      is_completed
+      created_at
+      updated_at
+      is_public
+      user {
+        name
+      }
+    }
+  }
+}

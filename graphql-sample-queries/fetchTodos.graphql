@@ -1,0 +1,22 @@
+# a query to fetch all public todos
+# order by id in descending order
+# where is_public is taken from variables
+query (
+  $isPublic: Boolean,
+){
+  todos (
+    order_by: id_desc,
+    where: { is_public: { _eq: $isPublic} }
+    limit: 10
+  ) {
+    id
+    text
+    is_completed
+    created_at
+    updated_at
+    is_public
+    user {
+      name
+    }
+  }
+}

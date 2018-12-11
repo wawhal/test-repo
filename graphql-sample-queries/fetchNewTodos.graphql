@@ -1,0 +1,22 @@
+# a query to fetch todos newer than the todo with id=lastId
+# lastId is taken from variables
+
+query ($lastId: Int){
+  todos (
+    order_by: id_desc,
+    where: {
+      and: {
+        is_public: { _eq: true},
+        id: { _gt: $lastId}
+      }
+    }
+  ) {
+    id
+    text
+    is_completed
+    user {
+      name
+    }
+    created_at
+  }
+}

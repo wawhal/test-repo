@@ -1,0 +1,11 @@
+# a subscription to get the latest tweet in the table
+
+subscription {
+  todos (
+    order_by: id_desc
+    limit: 1
+    where: { is_public: { _eq: true }}
+  ) {
+    id
+  }
+}

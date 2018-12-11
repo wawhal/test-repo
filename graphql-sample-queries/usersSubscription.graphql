@@ -1,0 +1,7 @@
+# subscription to get a realtime list of online users
+
+subscription {
+  online_users {
+    name
+  }
+}

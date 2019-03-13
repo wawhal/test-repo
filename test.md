@@ -1,5 +1,7 @@
 ## Test image
 
+[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+
 ## Bar
 
 |Property|Type|Description|

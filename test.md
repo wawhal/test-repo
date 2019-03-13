@@ -1,6 +1,6 @@
 ## Test image
 <div style="text-align:center">
-<a href="http://stackoverflow.com" target="_blank" rel="noopener">
+<a href="http://stackoverflow.com" target="_blank">
   <img src="https://storage.googleapis.com/graphql-engine-cdn.hasura.io/assets/graphql2chartjs/g2c-youtube-embed.png" width="1000px">
 </a>
 </div>

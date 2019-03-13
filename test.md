@@ -1,8 +1,9 @@
 ## Test image
-
+<div style="text-align:center">
 <a href="http://stackoverflow.com">
-  <img src="https://storage.googleapis.com/graphql-engine-cdn.hasura.io/assets/graphql2chartjs/g2c-youtube-embed.png" width="100px">
+  <img src="https://storage.googleapis.com/graphql-engine-cdn.hasura.io/assets/graphql2chartjs/g2c-youtube-embed.png" width="500px">
 </a>
+</div>
 
 ## Bar
 

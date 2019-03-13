@@ -1,6 +1,8 @@
 ## Test image
 
-[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+<a href="http://stackoverflow.com">
+  ![HEy there](https://storage.googleapis.com/graphql-engine-cdn.hasura.io/assets/graphql2chartjs/g2c-youtube-embed.png)
+</a>
 
 ## Bar
 

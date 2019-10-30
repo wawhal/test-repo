@@ -1,0 +1,11 @@
+mutation {
+  userSignup (
+    login: {
+      email: "abcd@123.com",
+      password: "abcd1234"
+    }
+  ) {
+    email
+    token
+  }
+}

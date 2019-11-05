@@ -1,0 +1,17 @@
+input LoginInfo {
+  email: String
+  password: String
+}
+
+type UserInfo {
+  accessToken: String
+  userId: Int
+}
+
+type Mutation {
+  ## define your mutation here
+  ## this will available in mutation_root of Hasura schema
+  userSignup (
+    login: LoginInfo
+  ): UserInfo
+}
